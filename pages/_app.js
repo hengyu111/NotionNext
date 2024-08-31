@@ -1,4 +1,5 @@
 // import '@/styles/animate.css' // @see https://animate.style/
+import { Analytics } from '@vercel/analytics';
 import '@/styles/globals.css'
 import '@/styles/utility-patterns.css'
 
@@ -53,6 +54,7 @@ const MyApp = ({ Component, pageProps }) => {
         <Component {...pageProps} />
       </GLayout>
       <ExternalPlugins {...pageProps} />
+      <Analytics />
     </GlobalContextProvider>
   )
 }
